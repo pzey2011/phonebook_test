@@ -9,7 +9,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>E-Phonebook</title>
+
+        <!-- Fonts -->
+        
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,8 +61,8 @@
                         @else
                             <li><a href="{{ url('/letters') }}">Letters</a></li>
                             <li class="dropdown">
-                                <img src="/{{ Auth::user()->image }}" class="menu-image">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position: relative; margin-left: 5px; ">
+                               <a> <img src="/{{ Auth::user()->image }}" class="menu-image"></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position: inherit;margin-left: 10px; ">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
